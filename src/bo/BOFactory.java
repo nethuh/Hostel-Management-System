@@ -1,9 +1,8 @@
 package bo;
 
-
-import bo.custom.ReservationBOImpl;
-import bo.custom.RoomBOImpl;
-import bo.custom.StudentBOImpl;
+import bo.custom.impl.ReservationBOImpl;
+import bo.custom.impl.RoomBOImpl;
+import bo.custom.impl.StudentBOImpl;
 
 public class BOFactory {private static BOFactory boFactory;
     private BOFactory(){}
@@ -28,5 +27,4 @@ public class BOFactory {private static BOFactory boFactory;
                 return null;
         }
     }
-
 }

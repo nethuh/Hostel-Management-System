@@ -47,4 +47,3 @@ public class HomeFormController {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/LoginForm.fxml"))));
     }
 }
-

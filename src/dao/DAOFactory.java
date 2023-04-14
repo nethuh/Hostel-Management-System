@@ -1,8 +1,9 @@
 package dao;
 
-import dao.custom.ReservationDAOImpl;
-import dao.custom.RoomDAOImpl;
-import dao.custom.StudentDAOImpl;
+import bo.custom.ReservationBO;
+import dao.custom.impl.ReservationDAOImpl;
+import dao.custom.impl.RoomDAOImpl;
+import dao.custom.impl.StudentDAOImpl;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;
