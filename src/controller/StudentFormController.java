@@ -99,13 +99,13 @@ public class StudentFormController {
             txtName.setStyle("-jfx-focus-color: red");
             txtName.setStyle("-jfx-unfocus-color: red");
             return;
-        } else if (!txtAddress.getText().matches("^[A-z0-9 ,/]{4,20}$")) {
+        } else if (!txtAddress.getText().matches("\\b([a-z]|[A-Z])+")) {
             new Alert(Alert.AlertType.ERROR, "Invalid Address").show();
             txtAddress.requestFocus();
             txtAddress.setStyle("-jfx-focus-color: red");
             txtAddress.setStyle("-jfx-unfocus-color: red");
             return;
-        } else if (!txtContactNo.getText().matches("[0-9]{1,}$")) {
+        } else if (!txtContactNo.getText().matches("0((11)|(7(7|0|8|4|9|1|[3-7]))|(3[1-8])|(4(1|5|7))|(5(1|2|4|5|7))|(6(3|[5-7]))|([8-9]1))[0-9]{7}")) {
             new Alert(Alert.AlertType.ERROR, "Invalid Contact No.").show();
             txtContactNo.requestFocus();
             txtContactNo.setStyle("-jfx-focus-color: red");
